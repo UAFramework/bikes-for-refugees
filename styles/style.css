@@ -105,12 +105,8 @@ button {
   border-style: solid;
   border-radius: 5px;
 }
-button::after {
+button:hover {
   background-color: var(--white);
-  color: var(--grey-dark);
-}
-button.Volunteer {
-  background-color: var(--grey-light);
   color: var(--orange-dark);
 }
   /* INSERT BUTTON STYLES HERE */
@@ -140,8 +136,8 @@ button.Volunteer {
 .hero {
   background-image: url("https://lh3.googleusercontent.com/_X7Z3nQknc8XAKlEHxY6u1_jN1RQg74zqGKB0BsaJ3daSHPcOOl4a44FJev7d6pgD5CV3i1CK3ddK-jIwfESRIrITIJcsioQHHMryQ7FDJnyaAzJitDf-SAWTcz4ZUDYdKaaebhvKwziBrLQIAyBHl4hwNrFkwUuixjBIKRlestzX7WY1BqhFjbwpM0PWlxAPqonITZ3Li2UwzXmE3gc4_vWxb5M8wEj2UoPpIIOxH0wHLyKux2fJdr8wZq9XlvnNnS-YTe1pWVBJPM1Jgd_tqM7sty8LEXB_ykwsbY6QS3ND9wbX7tJoqaFKS70YxQNwH8xH27aWQKoA1yy_zHaffltTuqFURopAk2DQdVIKlfULT3ouUKMJnfCeAdMVDLTDr8YIbRYE9ekVVZllLr7rxjvnVVxzOUhY613SUrC4zf7SGF7eypYDfYWQmdEx5aC_TpQDR36sXxbK5MOpAKqP28rWdVOARuSIhew9dxQZ7oFV5N-eOGdg2k1kDSzNWsMOe_5PoVqoBHPHgOIB93mt4M3rcGbMpkYP8jjQ-6LpZU4LRSF1lWg4VFHKfa8_hh40No5133L_Sp8gplXRmkpFSaRZ412EizSTiwJj3CUl5qAfkPsuj5WEr7NCT0f7f8K7zPr_uQnjxH3wp9lGP1ZylS-MpwgQQe7XjhOS4UW7DetQSB3RXl431cPylwnN3si4xrQrQDUN0xDrec-w48XvZiE01gLPwcIsEAi6Pjz-DGace_4I-wUk5j0yV4KLvOgZtVr_MvKKFY2_gDSqYTyM3BXebRDHjsoe4gYEFapOP6EkiALMUaDiPhVNhyj4BSw1k6k7JZt6D9O7B3dsv3sHfLewggCna62ya7ap79sztYwQeftFcc5FRShvaS2Z2J2C_k3Q9A97b4tpJQfO5H8p_1sHtdHlHLqe5qlBocp9pXv6giUtY87Q-W_iXIl_Nphrd__ZyKOVRAQQ0RD7CqO6w=w693-h344-s-no?authuser=0");
   background-color: var(--grey-light);
-  width: 800px;
   height: 240px;
+  min-width: 60%;
   max-height: 60%;
   min-height: 30%;
   text-align: left;
@@ -185,24 +181,25 @@ button.Volunteer {
   max-width: 100px;
   background: var(--orange-dark);
 }
-
+.navigation__link:hover {
+  color: orange;
+}
 /* Article */
 
 .container {
   display: flex;
-  width: 800px;
   margin: 0;
   text-align: left;
   align-items: stretch;
   flex-direction: row;
-  justify-content: space-around;
-  
+  justify-content: space-between;
 
 }
 
 .article1 {
   display: flex;
   border: #e4e4e4 2px solid;
+  border-radius: 4px;
   margin-bottom: 1rem;
   margin-left: 0px;
   padding: 10px;
@@ -252,10 +249,12 @@ button.Volunteer {
 }
 .article {
   border: var(--grey-light) 2px solid;
+  border-radius: 4px;
   padding: 10px;
-  margin-right: 10px;
 }
-
+.spase {
+  margin-right: 1rem;
+}
 .fa {
   margin-right: 0.5rem;
   color: var(--orange-dark);
