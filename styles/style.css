@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 15px;
+  padding: 0.5rem 20px;
 }
 
 .navigation__link {
@@ -74,6 +74,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: #c05326;
 }
 
 
@@ -103,6 +107,11 @@ p {
   border: 0;
 }
 
+.red-button:hover {
+  color: #c05326;
+  background-color: white;
+}
+
 .white-button {
   padding: 10px 10px;
   color: #c05326;
@@ -110,6 +119,11 @@ p {
   border-color: white;
   border-radius: 5px;
   border: 0;
+}
+
+.white-button:hover {
+  color: white;
+  background-color: #c05326;
 }
   /* INSERT BUTTON STYLES HERE */
 
@@ -188,7 +202,7 @@ p {
 
 }
 
-.article {
+#article-boxes section {
   margin-bottom: 1rem;
   padding: 20px;
   border-width: 2px;
@@ -218,6 +232,7 @@ p {
   object-fit: contain;
   width: 5rem;
   float: left;
+  padding-right: 10px;
 }
 
 .article__read-more {
@@ -243,7 +258,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
-  
+  margin-left: auto;
 }
 
 /* Sidebar */
@@ -254,6 +269,17 @@ p {
   min-width: 350px;
 }
 
+aside article {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-width: 2px;
+  border-color: #f7f7f7;
+  border-style: groove;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
 /* Footer */
 
 .footer {
@@ -262,8 +288,7 @@ p {
 
 .footer__content {
   border-top: 2px solid var(--orange-light);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 .footer p {
