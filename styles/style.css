@@ -66,7 +66,7 @@ p {
 }
 
 .navigation__item {
-  padding: 0.5rem 0;
+  padding: 0.5rem 15px;
 }
 
 .navigation__link {
@@ -94,7 +94,23 @@ p {
 
 
 /* Buttons */
+.red-button {
+  padding: 10px 10px;
+  background-color: #c05326;
+  color: white;
+  border-color: #c05326;
+  border-radius: 5px;
+  border: 0;
+}
 
+.white-button {
+  padding: 10px 10px;
+  color: #c05326;
+  background-color: white;
+  border-color: white;
+  border-radius: 5px;
+  border: 0;
+}
   /* INSERT BUTTON STYLES HERE */
 
 
@@ -120,8 +136,14 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("https://i.postimg.cc/FzDpRbf9/header-bike.jpg");
   background-color: var(--grey-light);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 30px;
+  color: white;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -161,8 +183,19 @@ p {
 
 /* Article */
 
+#article-boxes {
+  display: flex;
+
+}
+
 .article {
   margin-bottom: 1rem;
+  padding: 20px;
+  border-width: 2px;
+  border-color: #f7f7f7;
+  border-style: groove;
+  margin-left: 15px;
+  border-radius: 5px;
 }
 
 .article__title {
@@ -184,6 +217,7 @@ p {
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  float: left;
 }
 
 .article__read-more {
@@ -209,6 +243,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  
 }
 
 /* Sidebar */
